@@ -88,10 +88,10 @@
     platforms = [];
     source = {
       remotes = ["https://rubygems.org"];
-      sha256 = "0vcplvlykirg2vc56jjxavgpkllzq26xgp7ind7wc5ikaqaz64gn";
+      sha256 = "1iykfw2j6dd26rhgid3a17zghrmbmi68ppf3a7cdkvii68p4f37a";
       type = "gem";
     };
-    version = "0.64.0";
+    version = "0.85.0";
   };
   faraday = {
     dependencies = ["multipart-post"];
