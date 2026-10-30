@@ -1,4 +1,4 @@
-{ lib, bundlerEnv, ruby }:
+{ lib, bundlerEnv, bundlerUpdateScript, ruby }:
 
 bundlerEnv rec {
   pname = "pifi";
@@ -7,6 +7,8 @@ bundlerEnv rec {
   inherit ruby;
   # expects Gemfile, Gemfile.lock and gemset.nix in the same directory
   gemdir = ./.;
+
+  passthru.updateScript = bundlerUpdateScript "pifi";
 
   meta = with lib; {
     description = "MPD web client to listen to radio, written in React and Sinatra";
